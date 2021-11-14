@@ -1,0 +1,87 @@
+@import "src/_variables.scss";
+
+:host {
+  display: block;
+  padding-top: 40px;
+  border-radius: 12px 12px 15px 15px;
+  position: relative;
+  overflow: hidden;
+
+  &.work {
+    background-color: $work;
+  }
+
+  &.play {
+    background-color: $play;
+  }
+
+  &.study {
+    background-color: $study;
+  }
+
+  &.exercise {
+    background-color: $exercise;
+  }
+
+  &.social {
+    background-color: $social;
+  }
+
+  &.self-care {
+    background-color: $self-care;
+  }
+
+}
+
+.icon {
+  position: absolute;
+  right: 20px;
+  top: -5px;
+  height: 60px;
+}
+
+.card {
+  border-radius: 12px;
+  padding: 18px;
+  background-color: $dark-blue;
+  position: relative;
+  z-index: 2;
+
+  .title {
+    display: flex;
+    align-items: center;
+
+    .menu {
+      margin-left: auto;
+    }
+  }
+
+  .statistics {
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-between;
+
+    .time {
+      font-size: 36px;
+    }
+
+    .previous {
+      font-size: 14px;
+      opacity: .6;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .card {
+    height: 100%;
+
+    .statistics {
+      margin-top: 24px;
+      flex-direction: column;
+      .previous {
+        margin-top: 12px;
+      }
+    }
+  }
+}

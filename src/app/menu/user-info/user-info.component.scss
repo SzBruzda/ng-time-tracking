@@ -1,0 +1,45 @@
+@import "src/_variables.scss";
+
+:host {
+  display: flex;
+  background-color: $blue;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.photo {
+  width: 60px;
+  border: 2px solid #eeeeee;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+
+  .label{
+    opacity: .7;
+  }
+
+  .name {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 800px) {
+  :host {
+    height: 300px;
+    flex-direction: column;
+    max-width: 220px;
+  }
+
+  .user-info {
+    margin-top: 48px;
+    padding-left: 0;
+
+    .name {
+      font-size: 36px;
+    }
+  }
+}

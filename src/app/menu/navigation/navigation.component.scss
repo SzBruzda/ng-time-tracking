@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.nav-item {
+  opacity: .6;
+  padding: 16px 0;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 800px) {
+  :host {
+    flex-direction: column;
+    padding: 12px 24px;
+  }
+
+  .nav-item {
+    padding: 8px 0;
+  }
+}
