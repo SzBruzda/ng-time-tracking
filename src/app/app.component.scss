@@ -15,3 +15,17 @@
     padding: 0 10%;
   }
 }
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  opacity: .6;
+  font-size: 12px;
+
+  a {
+    color: #eeeeee;
+  }
+}
